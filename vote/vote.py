@@ -19,7 +19,7 @@ def vote(url, btn):
 
 def loop(btn, url, browser):
     browser.get(url)
-    time.sleep(2)
+    time.sleep(1)
     for i in range(1, 15):
         browser.find_element_by_css_selector(btn).click()
 
